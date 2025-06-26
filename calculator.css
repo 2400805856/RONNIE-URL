@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #212121;
+    overflow: hidden;
+    background-color: rgb(20, 20, 1);
+}
+.calculator{
+    border: 1px solid rgb(179,179,179);
+    border-radius: 0.375rem;
+    width: 190px;
+    height: 280px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    border-style: groove;
+}
+.output{
+    border: 1px solid#ccc;
+    border-radius: 0.375rem;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding-right: 10px;
+    border-style: dashed;
+}
+.result{
+    font-size: 30px;
+    color: whitesmoke;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+button{
+    border: none;
+    border-radius: 0.375rem;
+    padding: 10px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+    background-color: yellow;
+}
+button:active{
+    background-color: blue;
+}
+.bg-green{
+    background-color: rgba(0,177,29,0.651);
+    color: white;
+}
+.bg-green:hover{
+    background-color: rgba(0,231,39,0.651);
+    color: white;
+}
+.bg-red{
+    background-color: rgba(223,4,4,0.651);
+    color: white;
+}
+.bg-red:hover{
+    background-color: rgba(255,1,1,0.651);
+    color: white;
+}
+header{
+    padding: 10px;
+    border-radius: 20px;
+    color: aqua;
+    background-image: url("png.jpg");
+
+}
+#link[href="RICHIE.jpg"]{
+    padding: 20px;
+    border-radius: 30px;
+}
