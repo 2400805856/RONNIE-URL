@@ -1,0 +1,90 @@
+.container {
+  max-width: 600px; /* increased width to fit the timer */
+  margin: auto;
+  padding: 20px; /* reduced padding to fit more content */
+  background: #0457f0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* fixed box-shadow syntax */
+  border-radius: 60px;
+}
+
+body{
+    background-color: lightblue;   
+    background-image: url("owen.jpg");
+    background-repeat: unset;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+#timer {
+  font-size: 4rem; /* reduced font size to fit within container */
+  font-weight: 650;
+  text-shadow: 2px 2px hsl(2, 98%, 50%);
+  color: rgb(201, 226, 236);
+  width: 100%; /* changed to 100% to fit within container */
+  text-align: center;
+  margin: 10px auto; /* reduced margin */
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+
+button {
+  background-color: limegreen;
+  color: blue;
+  border: none;
+  font-size: 1.5rem; /* reduced font size to fit within container */
+  font-weight: bold;
+  padding: 1rem 2rem; /* reduced padding */
+  margin: 0.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  transition: all 0.2s;
+}
+
+
+button:hover{
+    background-color: yellow;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+@media (max-width: 800px){
+    #timer{
+        font-size: 4rem;
+        width: 350px;
+    }
+    button{
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+}
+.container img{
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 500px;
+    cursor: pointer;
+}
+.container:hover > img{
+    scale: 1.15;
+    filter: grayscale(200px);
+}
+.container>img{
+    width: 100;
+    height: 100;
+    filter: grayscale(1);
+    transition:
+        scale 750ms ease-out,
+        filter 250ms ease-in-out ;
+}
